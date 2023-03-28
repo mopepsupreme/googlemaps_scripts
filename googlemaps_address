@@ -1,0 +1,4 @@
+const GOOGLEMAPS_ADDRESS = (address) => {
+   const { results: [data = {}] = [] } = Maps.newGeocoder().geocode(address);
+   return data.formatted_address;
+};
